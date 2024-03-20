@@ -1,14 +1,14 @@
+<img src="banner-dark.png" width="200px"/>
 <blockquote>
     <p id="quotation"></p>
     <footer>
       <p id="source"></p>
     </footer>
   </blockquote>
-  <button>Generate Quote</button>
+  <a class="button old-standard" href="https://discuss.krsna.center" target="_blank">forum</a>
 
   <style>
-    @import url("https://fonts.googleapis.com/css?family=Jim+Nightshade");
-@import url("https://fonts.googleapis.com/css?family=Assistant:300");
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 body {
   min-height: 100vh;
   display: flex;
@@ -17,27 +17,45 @@ body {
   flex-direction: column;
 }
 
-#quotation {
-  font-family: "Jim Nightshade", script;
-  font-size: 13vmin;
-  line-height: 1.2;
-  hanging-punctuation: first;
+#source  {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
 }
 
-#source {
-  font-family: "Assistant", sans-serif;
-  font-size: 4vmin;
-  text-indent: 4vmin;
-  color: rgba(0, 0, 0, 0.6);
+#quotation {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+
+  font-style: normal;
+}
+
+.old-standard tt-regular-italic {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 button {
   font-family: "Assistant", sans-serif;
   display: block;
-  padding: 0.5rem;
+  padding: 0.8rem;
   outline: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
   background: none;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.button {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: italic;
+  display: block;
+  padding: 0.8rem;
+  outline: none;
+  font-size: 1.5rem;
+  background: rgb(231, 231, 231);
   border: 1px solid rgba(0, 0, 0, 0.6);
 }
   </style>
@@ -45,36 +63,36 @@ button {
   <script>
     const quotes = [
 	{ 
-		"quote" : "The only sin is ignorance", 
-		"source" : "Christopher Marlowe" 
+		"quote" : "The happiness which comes from long practice, which leads to the end of suffering, which at first is like poison, but at last like nectar - this kind of happiness arises from the serenity of one's own mind.", 
+		"source" : "Ved Vyasa, The Bhagavad Gita" 
 	},
 	{
-		"quote" : "A man is his own easiest dupe, for what he wishes to be true he generally believes to be true", 
-		"source" : "Demosthenes"
+		"quote" : "Perform all work carefully, guided by compassion.", 
+		"source" : "Ved Vyasa, The Bhagavad Gita"
 	},
 	{
-		"quote" : "A lie can travel halfway around the world while the truth is putting on its shoes", 
-		"source" : "Mark Twain"
+		"quote" : "When a person responds to the joys and sorrows of others as if they were his own, he has attained the highest state of spiritual union.", 
+		"source" : "Krishna-Dwaipayana Vyasa, The Bhagavad Gita"
 	},
 	{
-		"quote" : "Great minds discuss ideas; average minds discuss events; small minds discuss people", 
-		"source" : "Eleanor Roosevelt"
+		"quote" : "Those established in Self-realization control their senses instead of letting their senses control them.", 
+		"source" : "Krishna-Dwaipayana Vyasa, The Bhagavad Gita"
 	},
 	{
-		"quote" : "If you have a garden and a library, you have everything you need", 
-		"source" : "Marcus Tullius Cicero"
+		"quote" : "Religion without philosophy is sentiment, or sometimes fanaticism, while philosophy without religion is mental speculation.", 
+		"source" : "A.C. Bhaktivedanta Swami Prabhupāda, Bhagavad-Gita"
 	},
 	{
-		"quote" : "Truth comes out in wine", 
-		"source" : "Pliny the Elder"
+		"quote" : "For man, mind is the cause of bondage and mind is the cause of liberation. Mind absorbed in sense objects is the cause of bondage, and mind detached from the sense objects is the cause of liberation.", 
+		"source" : "A.C. Bhaktivedanta Swami Prabhupāda, Bhagavad-Gita"
 	},
 	{
-		"quote" : "Everything in the universe is within you. Ask all from yourself", 
-		"source" : "Rumi"
+		"quote" : "Seek refuge in the attitude of detachment and you will amass the wealth of spiritual awareness. Those who are motivated only by desire for the fruits of action are miserable, for they are constantly anxious about the results of what they do.", 
+		"source" : "Krishna-Dwaipayana Vyasa, The Bhagavad Gita"
 	},
 	{
-		"quote" : "When I get a little money I buy books; and if any is left I buy food and clothes", 
-		"source" : "Desiderius Erasmus"
+		"quote" : "The yogi who looks with the same eye upon saints or sinners, relatives or strangers, friends or foes, well-wishers or even those wishing harm is indeed supreme.", 
+		"source" : "The Bhagavad Gita"
 	}
 ]
 
